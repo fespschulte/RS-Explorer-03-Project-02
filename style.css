@@ -61,6 +61,20 @@ ul{
 
 }
 
+ul li {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  color: #090039;
+  max-width: 25.7rem;
+  gap: 3.8rem;
+}
+ul li + li {
+  margin-top: 3.2rem;
+}
+
 ul li span {
   font-weight: 800;
   font-size: 7.2rem;
@@ -69,17 +83,23 @@ ul li span {
   color: #090039;
 }
 
-ul li {
-  display: flex;
-  align-items: center;
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-  font-weight: 700;
-  color: #090039;
-  width: 25.7rem;
-  gap: 3.8rem;
-}
+@media (min-width: 700px) {
+  body {
+    padding: 8rem;
+  }
+  main {
+    max-width: 1020px;
+    display: flex;
+    gap: 10rem;
+  }
+  main > div {
+    max-width: 484px;
 
-@media {
-  
+  }
+  ul li {
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+
 }
